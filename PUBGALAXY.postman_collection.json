@@ -1,0 +1,228 @@
+{
+	"variables": [],
+	"info": {
+		"name": "PUBGALAXY",
+		"_postman_id": "1274f80d-74e6-2c4e-ab2a-5da6d7eeaf03",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CREATE NEW CAR",
+			"request": {
+				"url": "http://pubgalaxy.remedysoftware.eu/pubgalaxy_api/cars/create",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "manufacturer",
+							"value": "Mercedess11111",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "model",
+							"value": "S class",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "model_year",
+							"value": "2020",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "engine",
+							"value": "4800",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "fuel_type",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "hybrid",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "four_by_four",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "auto_gearbox",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "CREATE NEW CAR"
+			},
+			"response": []
+		},
+		{
+			"name": "DELET CAR",
+			"request": {
+				"url": "http://pubgalaxy.remedysoftware.eu/pubgalaxy_api/cars/delete/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "manufacturer",
+							"value": "Mercedess",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "model",
+							"value": "S class",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "model_year",
+							"value": "2020",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "engine",
+							"value": "4800",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "fuel_type",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "hybrid",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "four_by_four",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "auto_gearbox",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "DELET CAR"
+			},
+			"response": []
+		},
+		{
+			"name": "SHOW CARS",
+			"request": {
+				"url": "http://pubgalaxy.remedysoftware.eu/pubgalaxy_api/cars",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "SHOW CARS"
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE CARS",
+			"request": {
+				"url": "http://pubgalaxy.remedysoftware.eu/pubgalaxy_api/cars/update",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "3",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "model",
+							"value": "S Class",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "hybrid",
+							"value": "0",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "UPDATE CARS"
+			},
+			"response": []
+		},
+		{
+			"name": "SHOW CARS BY PAGE",
+			"request": {
+				"url": "http://pubgalaxy.remedysoftware.eu/pubgalaxy_api/cars/indexPage/3",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "SHOW CARS BY PAGE"
+			},
+			"response": []
+		},
+		{
+			"name": "GET SINGLE",
+			"request": {
+				"url": "http://pubgalaxy.remedysoftware.eu/pubgalaxy_api/cars/single/10",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "GET SINGLE"
+			},
+			"response": []
+		},
+		{
+			"name": "SORT CARS BY KEY",
+			"request": {
+				"url": "http://pubgalaxy.remedysoftware.eu/pubgalaxy_api/cars/sortCarsBy/model",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "SORT CARS BY KEY"
+			},
+			"response": []
+		}
+	]
+}
